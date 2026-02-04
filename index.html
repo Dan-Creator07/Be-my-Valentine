@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Valentine 💘</title>
+  <style>
+    body {
+      background: #fdf6ef;
+      font-family: "Georgia", serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    .box {
+      background: white;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+    button {
+      margin: 15px;
+      padding: 12px 28px;
+      font-size: 16px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+    }
+    .yes {
+      background: black;
+      color: white;
+    }
+    .no {
+      background: #ddd;
+    }
+    #message {
+      margin-top: 20px;
+      color: #c0392b;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <h1>Do you want to be my Valentine? 💝</h1>
+
+    <button class="yes" onclick="yes()">Yes</button>
+    <button class="no" onclick="no()">No</button>
+
+    <div id="message"></div>
+  </div>
+
+  <script>
+    function yes() {
+      window.location.href = "coupon.html";
+    }
+    function no() {
+      document.getElementById("message").innerText =
+        "Wrong answer. Please try again 😉";
+    }
+  </script>
+
+</body>
+</html>
